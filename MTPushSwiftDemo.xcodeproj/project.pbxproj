@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A52EBBE2936FA3300CC67B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A52EBBD2936FA3300CC67B1 /* AppDelegate.swift */; };
+		2A52EBC22936FA3300CC67B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A52EBC12936FA3300CC67B1 /* ViewController.swift */; };
+		2A52EBC52936FA3300CC67B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A52EBC32936FA3300CC67B1 /* Main.storyboard */; };
+		2A52EBC72936FA3500CC67B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A52EBC62936FA3500CC67B1 /* Assets.xcassets */; };
+		2A52EBCA2936FA3500CC67B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A52EBC82936FA3500CC67B1 /* LaunchScreen.storyboard */; };
+		2A52EBE829370F3C00CC67B1 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A52EBE429370F3B00CC67B1 /* OtherViewController.swift */; };
+		2A52EBE929370F3C00CC67B1 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A52EBE529370F3B00CC67B1 /* RootViewController.swift */; };
+		2A52EBEA29370F3C00CC67B1 /* setLocalNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A52EBE629370F3C00CC67B1 /* setLocalNotificationViewController.swift */; };
+		2A52EBF329374E5B00CC67B1 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A52EBEF29374E5A00CC67B1 /* RootViewController.xib */; };
+		2A52EBF429374E5B00CC67B1 /* setLocalNotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A52EBF029374E5B00CC67B1 /* setLocalNotificationViewController.xib */; };
+		2A52EBF529374E5B00CC67B1 /* MTPushTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A52EBF129374E5B00CC67B1 /* MTPushTabBarViewController.xib */; };
+		2A52EBF629374E5B00CC67B1 /* OtherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A52EBF229374E5B00CC67B1 /* OtherViewController.xib */; };
+		2A52EBFA29385B2300CC67B1 /* sound.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2A52EBF929385B2300CC67B1 /* sound.caf */; };
+		FF4773F62F91F5736125BA11 /* Pods_MTPushSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614524A52DE9BB7CEBE1106E /* Pods_MTPushSwiftDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1E5BDA4374F67EC35429904B /* Pods-MTPushSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTPushSwiftDemo.release.xcconfig"; path = "Target Support Files/Pods-MTPushSwiftDemo/Pods-MTPushSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
+		2A52EBBA2936FA3300CC67B1 /* MTPushSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTPushSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A52EBBD2936FA3300CC67B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2A52EBC12936FA3300CC67B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2A52EBC42936FA3300CC67B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2A52EBC62936FA3500CC67B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A52EBC92936FA3500CC67B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2A52EBCB2936FA3500CC67B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A52EBE429370F3B00CC67B1 /* OtherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
+		2A52EBE529370F3B00CC67B1 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		2A52EBE629370F3C00CC67B1 /* setLocalNotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = setLocalNotificationViewController.swift; sourceTree = "<group>"; };
+		2A52EBEB29370F9800CC67B1 /* MTPushSwiftDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MTPushSwiftDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		2A52EBEF29374E5A00CC67B1 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		2A52EBF029374E5B00CC67B1 /* setLocalNotificationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = setLocalNotificationViewController.xib; sourceTree = "<group>"; };
+		2A52EBF129374E5B00CC67B1 /* MTPushTabBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTPushTabBarViewController.xib; sourceTree = "<group>"; };
+		2A52EBF229374E5B00CC67B1 /* OtherViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtherViewController.xib; sourceTree = "<group>"; };
+		2A52EBF729377C2C00CC67B1 /* MTPushSwiftDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MTPushSwiftDemo.entitlements; sourceTree = "<group>"; };
+		2A52EBF929385B2300CC67B1 /* sound.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sound.caf; sourceTree = "<group>"; };
+		614524A52DE9BB7CEBE1106E /* Pods_MTPushSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTPushSwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A65FB934A659D0EC33D0E712 /* Pods-MTPushSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTPushSwiftDemo.debug.xcconfig"; path = "Target Support Files/Pods-MTPushSwiftDemo/Pods-MTPushSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A52EBB72936FA3300CC67B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4773F62F91F5736125BA11 /* Pods_MTPushSwiftDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		190D48043B069DC2D5D81065 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				614524A52DE9BB7CEBE1106E /* Pods_MTPushSwiftDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A52EBB12936FA3300CC67B1 = {
+			isa = PBXGroup;
+			children = (
+				2A52EBBC2936FA3300CC67B1 /* MTPushSwiftDemo */,
+				2A52EBBB2936FA3300CC67B1 /* Products */,
+				F21BF27C4EB5244E08AB9392 /* Pods */,
+				190D48043B069DC2D5D81065 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2A52EBBB2936FA3300CC67B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A52EBBA2936FA3300CC67B1 /* MTPushSwiftDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A52EBBC2936FA3300CC67B1 /* MTPushSwiftDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2A52EBF829385B1600CC67B1 /* resources */,
+				2A52EBF729377C2C00CC67B1 /* MTPushSwiftDemo.entitlements */,
+				2A52EBD62937075F00CC67B1 /* Controlller */,
+				2A52EBD3293705C800CC67B1 /* View */,
+				2A52EBBD2936FA3300CC67B1 /* AppDelegate.swift */,
+				2A52EBC12936FA3300CC67B1 /* ViewController.swift */,
+				2A52EBC32936FA3300CC67B1 /* Main.storyboard */,
+				2A52EBC62936FA3500CC67B1 /* Assets.xcassets */,
+				2A52EBC82936FA3500CC67B1 /* LaunchScreen.storyboard */,
+				2A52EBCB2936FA3500CC67B1 /* Info.plist */,
+			);
+			path = MTPushSwiftDemo;
+			sourceTree = "<group>";
+		};
+		2A52EBD3293705C800CC67B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2A52EBF129374E5B00CC67B1 /* MTPushTabBarViewController.xib */,
+				2A52EBF229374E5B00CC67B1 /* OtherViewController.xib */,
+				2A52EBEF29374E5A00CC67B1 /* RootViewController.xib */,
+				2A52EBF029374E5B00CC67B1 /* setLocalNotificationViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A52EBD62937075F00CC67B1 /* Controlller */ = {
+			isa = PBXGroup;
+			children = (
+				2A52EBE529370F3B00CC67B1 /* RootViewController.swift */,
+				2A52EBE429370F3B00CC67B1 /* OtherViewController.swift */,
+				2A52EBE629370F3C00CC67B1 /* setLocalNotificationViewController.swift */,
+				2A52EBEB29370F9800CC67B1 /* MTPushSwiftDemo-Bridging-Header.h */,
+			);
+			path = Controlller;
+			sourceTree = "<group>";
+		};
+		2A52EBF829385B1600CC67B1 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				2A52EBF929385B2300CC67B1 /* sound.caf */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		F21BF27C4EB5244E08AB9392 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A65FB934A659D0EC33D0E712 /* Pods-MTPushSwiftDemo.debug.xcconfig */,
+				1E5BDA4374F67EC35429904B /* Pods-MTPushSwiftDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A52EBB92936FA3300CC67B1 /* MTPushSwiftDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A52EBCE2936FA3500CC67B1 /* Build configuration list for PBXNativeTarget "MTPushSwiftDemo" */;
+			buildPhases = (
+				48CD2625AFF51F51732F3AF1 /* [CP] Check Pods Manifest.lock */,
+				2A52EBB62936FA3300CC67B1 /* Sources */,
+				2A52EBB72936FA3300CC67B1 /* Frameworks */,
+				2A52EBB82936FA3300CC67B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MTPushSwiftDemo;
+			productName = MTPushSwiftDemo;
+			productReference = 2A52EBBA2936FA3300CC67B1 /* MTPushSwiftDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A52EBB22936FA3300CC67B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					2A52EBB92936FA3300CC67B1 = {
+						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
+					};
+				};
+			};
+			buildConfigurationList = 2A52EBB52936FA3300CC67B1 /* Build configuration list for PBXProject "MTPushSwiftDemo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A52EBB12936FA3300CC67B1;
+			productRefGroup = 2A52EBBB2936FA3300CC67B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A52EBB92936FA3300CC67B1 /* MTPushSwiftDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A52EBB82936FA3300CC67B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A52EBF429374E5B00CC67B1 /* setLocalNotificationViewController.xib in Resources */,
+				2A52EBF529374E5B00CC67B1 /* MTPushTabBarViewController.xib in Resources */,
+				2A52EBFA29385B2300CC67B1 /* sound.caf in Resources */,
+				2A52EBCA2936FA3500CC67B1 /* LaunchScreen.storyboard in Resources */,
+				2A52EBF629374E5B00CC67B1 /* OtherViewController.xib in Resources */,
+				2A52EBC72936FA3500CC67B1 /* Assets.xcassets in Resources */,
+				2A52EBF329374E5B00CC67B1 /* RootViewController.xib in Resources */,
+				2A52EBC52936FA3300CC67B1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48CD2625AFF51F51732F3AF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MTPushSwiftDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A52EBB62936FA3300CC67B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A52EBEA29370F3C00CC67B1 /* setLocalNotificationViewController.swift in Sources */,
+				2A52EBE929370F3C00CC67B1 /* RootViewController.swift in Sources */,
+				2A52EBE829370F3C00CC67B1 /* OtherViewController.swift in Sources */,
+				2A52EBC22936FA3300CC67B1 /* ViewController.swift in Sources */,
+				2A52EBBE2936FA3300CC67B1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2A52EBC32936FA3300CC67B1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A52EBC42936FA3300CC67B1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2A52EBC82936FA3500CC67B1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A52EBC92936FA3500CC67B1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A52EBCC2936FA3500CC67B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2A52EBCD2936FA3500CC67B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A52EBCF2936FA3500CC67B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A65FB934A659D0EC33D0E712 /* Pods-MTPushSwiftDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MTPushSwiftDemo/MTPushSwiftDemo.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = UT282795WK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MTPushSwiftDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.jiguang.hxhg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = cn.jiguang.hxhg;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MTPushSwiftDemo/Controlller/MTPushSwiftDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2A52EBD02936FA3500CC67B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E5BDA4374F67EC35429904B /* Pods-MTPushSwiftDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MTPushSwiftDemo/MTPushSwiftDemo.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = UT282795WK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MTPushSwiftDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.jiguang.hxhg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = cn.jiguang.hxhg;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MTPushSwiftDemo/Controlller/MTPushSwiftDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A52EBB52936FA3300CC67B1 /* Build configuration list for PBXProject "MTPushSwiftDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A52EBCC2936FA3500CC67B1 /* Debug */,
+				2A52EBCD2936FA3500CC67B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A52EBCE2936FA3500CC67B1 /* Build configuration list for PBXNativeTarget "MTPushSwiftDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A52EBCF2936FA3500CC67B1 /* Debug */,
+				2A52EBD02936FA3500CC67B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A52EBB22936FA3300CC67B1 /* Project object */;
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AppDelegate">
+            <connections>
+                <outlet property="rootController" destination="FWB-wZ-kSm" id="BTy-Oj-CSZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tabBarController nibName="" definesPresentationContext="YES" id="FWB-wZ-kSm">
+            <nil key="simulatedBottomBarMetrics"/>
+            <tabBar key="tabBar" contentMode="scaleToFill" id="cwM-pT-IIJ">
+                <rect key="frame" x="0.0" y="431" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            </tabBar>
+            <viewControllers>
+                <viewController nibName="RootViewController" id="GYK-Jf-6E0" customClass="RootViewController" customModule="MTPushSwiftDemo" customModuleProvider="target">
+                    <tabBarItem key="tabBarItem" title="首页" image="index" id="zgn-Y6-Gw4"/>
+                </viewController>
+                <viewController nibName="setLocalNotificationViewController" automaticallyAdjustsScrollViewInsets="NO" id="9pY-dx-Ot0" customClass="setLocalNotificationViewController" customModule="MTPushSwiftDemo" customModuleProvider="target">
+                    <tabBarItem key="tabBarItem" title="本地通知" image="localNotification" id="Emv-XX-cae"/>
+                    <toolbarItems/>
+                </viewController>
+                <viewController nibName="OtherViewController" id="er1-b3-YLv" customClass="OtherViewController" customModule="MTPushSwiftDemo" customModuleProvider="target">
+                    <tabBarItem key="tabBarItem" title="其他" image="report" id="s7h-zQ-dEx"/>
+                </viewController>
+            </viewControllers>
+            <point key="canvasLocation" x="140" y="155"/>
+        </tabBarController>
+    </objects>
+    <resources>
+        <image name="index" width="28" height="25"/>
+        <image name="localNotification" width="28" height="25"/>
+        <image name="report" width="28" height="25"/>
+    </resources>
+</document>
