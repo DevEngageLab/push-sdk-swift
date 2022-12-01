@@ -1,0 +1,16 @@
+PODS:
+  - MTPush (3.0.0)
+
+DEPENDENCIES:
+  - MTPush (~> 3.0.0)
+
+SPEC REPOS:
+  trunk:
+    - MTPush
+
+SPEC CHECKSUMS:
+  MTPush: 3b0dc08fae1b445f52e24791f8b128c4015148c5
+
+PODFILE CHECKSUM: 8ff881442bc2ec8f0ff0fd9f0b3194fbab8b3bed
+
+COCOAPODS: 1.11.2
