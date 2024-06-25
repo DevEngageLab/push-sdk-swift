@@ -8,7 +8,7 @@
 import UIKit
 import UserNotifications
 
-let appKey = "c571017eb5459d84170c8bf0"
+let appKey = "fcc545917674d6f06c141704"
 let channel = "Publish channel"
 let isProduction = false
 
@@ -61,6 +61,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MTPushRegisterDelegate {
           // 可以自定义 categories
         } else {
         }
+        
+        MTPushService.setDebugMode()
     
         MTPushService.register(forRemoteNotificationConfig: entity, delegate: self)
         
@@ -106,7 +108,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MTPushRegisterDelegate {
         // 向SDK注册DeviceToken
         MTPushService.registerDeviceToken(deviceToken)
         
-        self.rootViewController?.deviceTokenValueLabel.text = "\(deviceToken)"
+        var token = ""
+        for byte in deviceToken {
+          token += String(format: "%02x", byte)
+        }
+        self.rootViewController?.deviceTokenValueLabel.text = "\(token)"
     }
     
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {

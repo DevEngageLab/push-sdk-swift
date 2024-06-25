@@ -35,7 +35,6 @@ class RootViewController: UIViewController {
     registrationValueLabel.text = MTPushService.registrationID()
     appKeyLabel.text = appKey
     
-    defaultCenter.addObserver(self, selector: #selector(RootViewController.didRegisterRemoteNotification(_:)), name:NSNotification.Name(rawValue: "DidRegisterRemoteNotification"), object: nil)
   }
 
   override func didReceiveMemoryWarning() {
@@ -124,11 +123,6 @@ class RootViewController: UIViewController {
     let userInfo = (notification as NSNotification).userInfo as? Dictionary<String,String>
     let error = userInfo!["error"]
     print(error)
-  }
-
-  @objc func didRegisterRemoteNotification(_ notification:Notification) {
-    let deviceTokenStr = notification.object
-    deviceTokenValueLabel.text = "\(deviceTokenStr)"
   }
   
   func reloadMessageCountLabel() {
