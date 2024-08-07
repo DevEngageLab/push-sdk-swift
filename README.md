@@ -2,13 +2,13 @@
 
 Offically supported Swift Demo for EngageLab MTPush iOS SDK. 
 
-## MTPush SDK 集成步骤
+## MTPush SDK SetUp
 
-#### 手动导入
+#### Manual
 
-* 在 Xcode 中选择 “Add files to 'Your project name'...”，将解压后的 lib 子文件夹（包含  MTPushService.h,、mtpush-ios-x.x.x.a ）添加到你的工程目录中。
+* Select "Add files to 'Your project name'..." in Xcode and add the decompressed lib subfolder (containing mtpush-ios-x.x.x.xcframework) to your project directory.
 
-* 添加 Framework 
+* add Framework 
   ○ CFNetwork.framework
   ○ CoreFoundation.framework
   ○ CoreTelephony.framework
@@ -17,23 +17,21 @@ Offically supported Swift Demo for EngageLab MTPush iOS SDK.
   ○ Foundation.framework
   ○ UIKit.framework
   ○ Security.framework
-  ○ libz.tbd（Xcode 7 以下版本是 libz.dylib）
-  ○ UserNotifications.framework（Xcode 8 及以上）
-  ○ libresolv.tbd（Xcode 7 以下版本是 libresolv.dylib）
+  ○ libz.tbd
+  ○ UserNotifications.framework
+  ○ libresolv.tbd
   ○ libsqlite3.tbd
   
 
 ##### Build Settings
 
-如果你的工程需要支持小于 7.0 的 iOS 系统，请到 Build Settings 关闭 bitCode 选项，否则将无法正常编译通过。
-
-* 设置 Search Paths 下的 User Header Search Paths 和 Library Search Paths，比如 SDK 文件夹（默认为 lib ）与工程文件在同一级目录下，则都设置为 "$(SRCROOT)/{静态库所在文件夹名称}" 即可。
+* Set the `User Header Search Paths` and `Library Search Paths` under `Search Paths`. For example, if the SDK folder (default is lib) and the project file are in the same directory, set them to "$(SRCROOT)/{name of the folder where the static library is located} ".
 
 ##### Capabilities
 
-如使用 Xcode 8 及以上环境开发，请开启 Application Target 的 Capabilities->Push Notifications 选项。
+If you are developing using Xcode 8 or above environment, please turn on the `Capabilities->Push Notifications ` option of Application Target.
 
-如使用 Xcode 10 及以上环境开发，请开启 Application Target 的 Capabilities-> Access WIFI Infomation 选项。 
+If you are developing using Xcode 10 or above environment, please turn on the `Capabilities->Access WIFI Infomation` option of Application Target.
 
 
 #### Cocoapods 导入
@@ -42,23 +40,23 @@ Offically supported Swift Demo for EngageLab MTPush iOS SDK.
 pod 'MTPush'
 ```
 
-* 如果需要安装指定版本则使用以下方式（以 MTPush 3.0.0 版本为例）：
+* If you need to install a specific version, use the following method (taking MTPush 4.4.0 version as an example):
 
 ```
-pod 'MTPush', '3.0.0'
+pod 'MTPush', '4.4.0'
 ```
 
 
-#### 在工程中新建一个 Objective-C Bridging Header 文件
+#### Create a new Objective-C `Bridging Header file` in the project
 
 
-#### 在刚生成的Objective-C Bridging Header文件中导入 mtpush 头文件
+#### Import the mtpush header file into the newly generated Objective-C `Bridging Header file`
 
 ```
 #import "MTPushService.h"
 ```
 
-#### 在Appdelegate.swift 文件的 didFinishLaunching 方法中添加如下代码
+#### Add the following code in the didFinishLaunching method of the Appdelegate.swift file
 
 
 ```
@@ -83,7 +81,7 @@ pod 'MTPush', '3.0.0'
         }
         
         if #available(iOS 10.0, *) {
-          // 可以自定义 categories
+         
         } else {
         }
     
@@ -96,7 +94,7 @@ pod 'MTPush', '3.0.0'
   }
 ```
 
-#### 在Appdelegate.swift 文件的 didRegisterForRemoteNotificationsWithDeviceToken 方法中添加如下代码
+#### Add the following code in the didRegisterForRemoteNotificationsWithDeviceToken method of the Appdelegate.swift file
 
 
 ```
@@ -108,9 +106,9 @@ pod 'MTPush', '3.0.0'
   }
 ```
 
-#### 添加处理 APNs 通知回调方法
+#### Added callback method for handling APNs notifications
 
-在Appdelegate.swift 实现该回调方法并添加回调方法中的代码
+Implement the callback method in Appdelegate.swift and add the code in the callback method
 
 ```
 func mtpNotificationCenter(_ center: UNUserNotificationCenter!, willPresent notification: UNNotification!, withCompletionHandler completionHandler: ((Int) -> Void)!) {
@@ -143,21 +141,21 @@ func mtpNotificationCenter(_ center: UNUserNotificationCenter!, willPresent noti
     
      func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
         MTPushService.handleRemoteNotification(userInfo)
-        print("iOS6及以下系统，收到通知:\(userInfo)")
+        print("iOS6 and below systems, notification received:\(userInfo)")
     }
     
     
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
         MTPushService.handleRemoteNotification(userInfo)
-        print("iOS7及以上系统，收到通知:\(userInfo)")
+        print("iOS7 and above systems, notification received:\(userInfo)")
         completionHandler(.newData)
     }
     
 ```
 
-#### 成功运行
+#### Run successfully
 
-真机调试该项目，如果控制台输出以下日志则代表您已经集成成功。
+Debug the project on a real machine. If the console outputs the following log, it means that you have successfully integrated.
 
 ```
 2021-08-19 17:12:12.745823 219b28[1443:286814] | MTP | I - [MTCORETcpEventController] 
@@ -167,6 +165,6 @@ registrationID:171976fa8a8620a14a4
 idc:0
 ```
 
-到此 已经完成集成 MTPush sdk 的基本功能，若需要更多功能请参考Demo工程
+At this point, the basic functions of integrating MTPush sdk have been completed. If you need more functions, please refer to the Demo project.
 
 
