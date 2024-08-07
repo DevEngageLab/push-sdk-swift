@@ -66,6 +66,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MTPushRegisterDelegate {
     
         MTPushService.register(forRemoteNotificationConfig: entity, delegate: self)
         
+        MTPushService.setDebugMode()
+        
         // init
         MTPushService.setup(withOption: launchOptions, appKey: appKey, channel: channel, apsForProduction: isProduction)
         
